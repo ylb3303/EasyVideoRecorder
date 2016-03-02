@@ -14,7 +14,7 @@ EasyVideoRecorder是EasyDarwin开源团队成员开发的一款移动端短视�
 - 视频水印
 - 不断扩展中…
 
-**EasyPublisher SDK库个人使用免费，企业及商用需要经过授权，支持滤镜、MV定制**；
+**EasyVideoRecorder SDK库个人使用免费，企业及商用需要经过授权，支持滤镜、MV定制**；
 
 
 ## 获取更多信息 ##
