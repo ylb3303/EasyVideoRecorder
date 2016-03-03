@@ -16,11 +16,11 @@ EasyVideoRecorder是EasyDarwin开源团队成员开发的一款移动端短视�
 
 **EasyVideoRecorder SDK库个人使用免费，企业及商用需要经过授权，支持滤镜、MV定制**；
 
-<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_pai.png" width="300" alt="EasyVideoRecorder断点拍摄" />
+<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_pai.png" width="500" alt="EasyVideoRecorder断点拍摄" />
 
-<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_lvjing.png" width="300" alt="EasyVideoRecorder 滤镜" />
+<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_lvjing.png" width="500" alt="EasyVideoRecorder 滤镜" />
 
-<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_mv.png" width="300" alt="EasyVideoRecorder MV" />
+<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_mv.png" width="500" alt="EasyVideoRecorder MV" />
 
 
 ## 获取更多信息 ##
