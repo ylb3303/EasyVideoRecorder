@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
 
 public class SplashActivity extends Activity{
 
@@ -28,6 +29,9 @@ public class SplashActivity extends Activity{
 				SplashActivity.this.finish();
 			}
 		}, 2000);
+		
+		TextView txtVersion=(TextView) findViewById(R.id.txt_version);
+		txtVersion.setText(String.format("v%s", getString(R.string.version)));
 
 	}
 
