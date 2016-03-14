@@ -41,7 +41,7 @@ IOS:
 
 WEB：[www.EasyDarwin.org](http://www.easydarwin.org)
 
-Author：[Holo@EasyDarwin.org](mailto:Holo@EasyDarwin.org "EasyDarwin Holo")
+Author：Holo & Carl
 
 QQ交流群：[201790130](http://jq.qq.com/?_wv=1027&k=2Fz1eP2 "EasyVideoRecorder短视频SDK")
 
