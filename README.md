@@ -23,6 +23,18 @@ EasyVideoRecorder是EasyDarwin开源团队成员开发的一款移动端短视�
 <img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_mv.png" width="500" alt="EasyVideoRecorder MV" />
 
 
+## DEMO ##
+
+Android:
+
+<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_android.png" width="300"  height="300" alt="EasyVideoRecorder断点拍摄" />
+
+IOS:
+
+<img src="http://www.easydarwin.org/skin/easydarwin/images/easyvideorecorder_appstore.png" width="300"    height="300" alt="EasyVideoRecorder断点拍摄" />
+
+
+
 ## 获取更多信息 ##
 
 邮件：[support@easydarwin.org](mailto:support@easydarwin.org) 
