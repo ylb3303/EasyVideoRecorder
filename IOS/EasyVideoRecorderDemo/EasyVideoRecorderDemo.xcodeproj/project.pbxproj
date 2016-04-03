@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		366010141C8B252C00B6E438 /* libEasyVideoRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 366010131C8B252C00B6E438 /* libEasyVideoRecorder.a */; };
+		366D6D2D1C89E85700D4D83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6D2C1C89E85700D4D83B /* main.m */; };
+		366D6D301C89E85700D4D83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6D2F1C89E85700D4D83B /* AppDelegate.m */; };
+		366D6D331C89E85700D4D83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6D321C89E85700D4D83B /* ViewController.m */; };
+		366D6D361C89E85700D4D83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366D6D341C89E85700D4D83B /* Main.storyboard */; };
+		366D6D381C89E85700D4D83B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366D6D371C89E85700D4D83B /* Assets.xcassets */; };
+		366D6D3B1C89E85700D4D83B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366D6D391C89E85700D4D83B /* LaunchScreen.storyboard */; };
+		366D6D661C89E92D00D4D83B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D651C89E92D00D4D83B /* OpenGLES.framework */; };
+		366D6D681C89E93300D4D83B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D671C89E93300D4D83B /* CoreVideo.framework */; };
+		366D6D6A1C89E93A00D4D83B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D691C89E93A00D4D83B /* MediaPlayer.framework */; };
+		366D6D6C1C89E94300D4D83B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D6B1C89E94300D4D83B /* CoreMedia.framework */; };
+		366D6D6E1C89E94A00D4D83B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D6D1C89E94A00D4D83B /* QuartzCore.framework */; };
+		366D6D701C89E94F00D4D83B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366D6D6F1C89E94F00D4D83B /* AVFoundation.framework */; };
+		366D6D7A1C89EB4200D4D83B /* resource in Resources */ = {isa = PBXBuildFile; fileRef = 366D6D791C89EB4200D4D83B /* resource */; };
+		366D6E311C89F2C500D4D83B /* AAPLPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6E2F1C89F2C500D4D83B /* AAPLPlayerViewController.m */; };
+		366D6E321C89F2C500D4D83B /* AAPLPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 366D6E301C89F2C500D4D83B /* AAPLPlayerViewController.xib */; };
+		366D6E351C89F2DF00D4D83B /* AAPLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6E341C89F2DF00D4D83B /* AAPLPlayerView.m */; };
+		366D6E421C8A00EF00D4D83B /* easy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 366D6E401C8A00EF00D4D83B /* easy_logo.png */; };
+		36A0DC0E1CB02D2100DC517A /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A0DC0D1CB02D2100DC517A /* frame.png */; };
+		36A757D21C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A757CB1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m */; };
+		36A757D31C8C7C5A00C3E411 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36A757CD1C8C7C5A00C3E411 /* SVProgressHUD.bundle */; };
+		36A757D41C8C7C5A00C3E411 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A757CF1C8C7C5A00C3E411 /* SVProgressHUD.m */; };
+		36A757D51C8C7C5A00C3E411 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A757D11C8C7C5A00C3E411 /* SVRadialGradientLayer.m */; };
+		E11D4C6B1CA181B70074170A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E11D4C631CA181B70074170A /* ALView+PureLayout.m */; };
+		E11D4C6C1CA181B70074170A /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E11D4C651CA181B70074170A /* NSArray+PureLayout.m */; };
+		E11D4C6D1CA181B70074170A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E11D4C671CA181B70074170A /* NSLayoutConstraint+PureLayout.m */; };
+		E16498111C9F91B100A30366 /* EasyVideoResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E16498101C9F91B100A30366 /* EasyVideoResource.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		366010131C8B252C00B6E438 /* libEasyVideoRecorder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEasyVideoRecorder.a; sourceTree = "<group>"; };
+		366D6D281C89E85700D4D83B /* EasyVideoRecorder1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyVideoRecorder1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		366D6D2C1C89E85700D4D83B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		366D6D2E1C89E85700D4D83B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		366D6D2F1C89E85700D4D83B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		366D6D311C89E85700D4D83B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		366D6D321C89E85700D4D83B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		366D6D351C89E85700D4D83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		366D6D371C89E85700D4D83B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		366D6D3A1C89E85700D4D83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		366D6D3C1C89E85700D4D83B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366D6D651C89E92D00D4D83B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		366D6D671C89E93300D4D83B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		366D6D691C89E93A00D4D83B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		366D6D6B1C89E94300D4D83B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		366D6D6D1C89E94A00D4D83B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		366D6D6F1C89E94F00D4D83B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		366D6D711C89E96500D4D83B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		366D6D791C89EB4200D4D83B /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
+		366D6E2E1C89F2C500D4D83B /* AAPLPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPlayerViewController.h; sourceTree = "<group>"; };
+		366D6E2F1C89F2C500D4D83B /* AAPLPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPlayerViewController.m; sourceTree = "<group>"; };
+		366D6E301C89F2C500D4D83B /* AAPLPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AAPLPlayerViewController.xib; sourceTree = "<group>"; };
+		366D6E331C89F2DF00D4D83B /* AAPLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPlayerView.h; sourceTree = "<group>"; };
+		366D6E341C89F2DF00D4D83B /* AAPLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPlayerView.m; sourceTree = "<group>"; };
+		366D6E391C89F7AC00D4D83B /* EasyCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyCaptureViewController.h; sourceTree = "<group>"; };
+		366D6E401C8A00EF00D4D83B /* easy_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = easy_logo.png; path = image/easy_logo.png; sourceTree = "<group>"; };
+		36A0DC0D1CB02D2100DC517A /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = SOURCE_ROOT; };
+		36A757CA1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		36A757CB1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		36A757CC1C8C7C5A00C3E411 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		36A757CD1C8C7C5A00C3E411 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		36A757CE1C8C7C5A00C3E411 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		36A757CF1C8C7C5A00C3E411 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		36A757D01C8C7C5A00C3E411 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		36A757D11C8C7C5A00C3E411 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		E11D4C3D1CA1234F0074170A /* EffectInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectInfo.h; sourceTree = "<group>"; };
+		E11D4C621CA181B70074170A /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		E11D4C631CA181B70074170A /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		E11D4C641CA181B70074170A /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		E11D4C651CA181B70074170A /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		E11D4C661CA181B70074170A /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		E11D4C671CA181B70074170A /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		E11D4C681CA181B70074170A /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		E11D4C691CA181B70074170A /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		E11D4C6A1CA181B70074170A /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		E11D4C7A1CA191C90074170A /* EasyVideoSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyVideoSdk.h; sourceTree = "<group>"; };
+		E16498101C9F91B100A30366 /* EasyVideoResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EasyVideoResource.bundle; sourceTree = "<group>"; };
+		E16498171C9FAEF500A30366 /* CustomVideoEditorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomVideoEditorController.h; sourceTree = "<group>"; };
+		E164981B1C9FB13D00A30366 /* EasyVideoEditorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyVideoEditorController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		366D6D251C89E85700D4D83B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366D6D701C89E94F00D4D83B /* AVFoundation.framework in Frameworks */,
+				366D6D6E1C89E94A00D4D83B /* QuartzCore.framework in Frameworks */,
+				366010141C8B252C00B6E438 /* libEasyVideoRecorder.a in Frameworks */,
+				366D6D6C1C89E94300D4D83B /* CoreMedia.framework in Frameworks */,
+				366D6D6A1C89E93A00D4D83B /* MediaPlayer.framework in Frameworks */,
+				366D6D681C89E93300D4D83B /* CoreVideo.framework in Frameworks */,
+				366D6D661C89E92D00D4D83B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366D6D1F1C89E85700D4D83B = {
+			isa = PBXGroup;
+			children = (
+				366D6D2A1C89E85700D4D83B /* EasyVideoRecorderDemo */,
+				366D6D291C89E85700D4D83B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		366D6D291C89E85700D4D83B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				366D6D281C89E85700D4D83B /* EasyVideoRecorder1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		366D6D2A1C89E85700D4D83B /* EasyVideoRecorderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				366D6D731C89E9FD00D4D83B /* EasyVideoRecorderLib */,
+				366D6D2E1C89E85700D4D83B /* AppDelegate.h */,
+				366D6D2F1C89E85700D4D83B /* AppDelegate.m */,
+				366D6E331C89F2DF00D4D83B /* AAPLPlayerView.h */,
+				366D6E341C89F2DF00D4D83B /* AAPLPlayerView.m */,
+				366D6E2E1C89F2C500D4D83B /* AAPLPlayerViewController.h */,
+				366D6E2F1C89F2C500D4D83B /* AAPLPlayerViewController.m */,
+				366D6E301C89F2C500D4D83B /* AAPLPlayerViewController.xib */,
+				36A0DC0D1CB02D2100DC517A /* frame.png */,
+				E11D4C611CA181B70074170A /* PureLayout */,
+				36A757C91C8C7C5A00C3E411 /* SVProgressHUD */,
+				366D6D791C89EB4200D4D83B /* resource */,
+				366D6D311C89E85700D4D83B /* ViewController.h */,
+				366D6D321C89E85700D4D83B /* ViewController.m */,
+				366D6D341C89E85700D4D83B /* Main.storyboard */,
+				366D6D371C89E85700D4D83B /* Assets.xcassets */,
+				366D6E401C8A00EF00D4D83B /* easy_logo.png */,
+				366D6D391C89E85700D4D83B /* LaunchScreen.storyboard */,
+				366D6D3C1C89E85700D4D83B /* Info.plist */,
+				366D6D2B1C89E85700D4D83B /* Supporting Files */,
+			);
+			path = EasyVideoRecorderDemo;
+			sourceTree = "<group>";
+		};
+		366D6D2B1C89E85700D4D83B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				366D6D711C89E96500D4D83B /* AssetsLibrary.framework */,
+				366D6D6F1C89E94F00D4D83B /* AVFoundation.framework */,
+				366D6D6D1C89E94A00D4D83B /* QuartzCore.framework */,
+				366D6D6B1C89E94300D4D83B /* CoreMedia.framework */,
+				366D6D691C89E93A00D4D83B /* MediaPlayer.framework */,
+				366D6D671C89E93300D4D83B /* CoreVideo.framework */,
+				366D6D651C89E92D00D4D83B /* OpenGLES.framework */,
+				366D6D2C1C89E85700D4D83B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		366D6D731C89E9FD00D4D83B /* EasyVideoRecorderLib */ = {
+			isa = PBXGroup;
+			children = (
+				E11D4C7A1CA191C90074170A /* EasyVideoSdk.h */,
+				366D6E391C89F7AC00D4D83B /* EasyCaptureViewController.h */,
+				E16498171C9FAEF500A30366 /* CustomVideoEditorController.h */,
+				E11D4C3D1CA1234F0074170A /* EffectInfo.h */,
+				E164981B1C9FB13D00A30366 /* EasyVideoEditorController.h */,
+				366010131C8B252C00B6E438 /* libEasyVideoRecorder.a */,
+				E16498101C9F91B100A30366 /* EasyVideoResource.bundle */,
+			);
+			name = EasyVideoRecorderLib;
+			path = ../../EasyVideoRecorderLib;
+			sourceTree = "<group>";
+		};
+		36A757C91C8C7C5A00C3E411 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				36A757CA1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.h */,
+				36A757CB1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m */,
+				36A757CC1C8C7C5A00C3E411 /* SVProgressHUD-Prefix.pch */,
+				36A757CD1C8C7C5A00C3E411 /* SVProgressHUD.bundle */,
+				36A757CE1C8C7C5A00C3E411 /* SVProgressHUD.h */,
+				36A757CF1C8C7C5A00C3E411 /* SVProgressHUD.m */,
+				36A757D01C8C7C5A00C3E411 /* SVRadialGradientLayer.h */,
+				36A757D11C8C7C5A00C3E411 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		E11D4C611CA181B70074170A /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E11D4C621CA181B70074170A /* ALView+PureLayout.h */,
+				E11D4C631CA181B70074170A /* ALView+PureLayout.m */,
+				E11D4C641CA181B70074170A /* NSArray+PureLayout.h */,
+				E11D4C651CA181B70074170A /* NSArray+PureLayout.m */,
+				E11D4C661CA181B70074170A /* NSLayoutConstraint+PureLayout.h */,
+				E11D4C671CA181B70074170A /* NSLayoutConstraint+PureLayout.m */,
+				E11D4C681CA181B70074170A /* PureLayout+Internal.h */,
+				E11D4C691CA181B70074170A /* PureLayout.h */,
+				E11D4C6A1CA181B70074170A /* PureLayoutDefines.h */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		366D6D271C89E85700D4D83B /* EasyVideoRecorderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366D6D551C89E85700D4D83B /* Build configuration list for PBXNativeTarget "EasyVideoRecorderDemo" */;
+			buildPhases = (
+				366D6D241C89E85700D4D83B /* Sources */,
+				366D6D251C89E85700D4D83B /* Frameworks */,
+				366D6D261C89E85700D4D83B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyVideoRecorderDemo;
+			productName = EasyVideoRecorderDemo;
+			productReference = 366D6D281C89E85700D4D83B /* EasyVideoRecorder1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		366D6D201C89E85700D4D83B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = EasyDarwin;
+				TargetAttributes = {
+					366D6D271C89E85700D4D83B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 366D6D231C89E85700D4D83B /* Build configuration list for PBXProject "EasyVideoRecorderDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 366D6D1F1C89E85700D4D83B;
+			productRefGroup = 366D6D291C89E85700D4D83B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				366D6D271C89E85700D4D83B /* EasyVideoRecorderDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366D6D261C89E85700D4D83B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366D6D7A1C89EB4200D4D83B /* resource in Resources */,
+				E16498111C9F91B100A30366 /* EasyVideoResource.bundle in Resources */,
+				366D6D3B1C89E85700D4D83B /* LaunchScreen.storyboard in Resources */,
+				366D6D381C89E85700D4D83B /* Assets.xcassets in Resources */,
+				366D6E321C89F2C500D4D83B /* AAPLPlayerViewController.xib in Resources */,
+				36A757D31C8C7C5A00C3E411 /* SVProgressHUD.bundle in Resources */,
+				366D6D361C89E85700D4D83B /* Main.storyboard in Resources */,
+				36A0DC0E1CB02D2100DC517A /* frame.png in Resources */,
+				366D6E421C8A00EF00D4D83B /* easy_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366D6D241C89E85700D4D83B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366D6D331C89E85700D4D83B /* ViewController.m in Sources */,
+				366D6D301C89E85700D4D83B /* AppDelegate.m in Sources */,
+				366D6E351C89F2DF00D4D83B /* AAPLPlayerView.m in Sources */,
+				36A757D51C8C7C5A00C3E411 /* SVRadialGradientLayer.m in Sources */,
+				E11D4C6D1CA181B70074170A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				E11D4C6C1CA181B70074170A /* NSArray+PureLayout.m in Sources */,
+				E11D4C6B1CA181B70074170A /* ALView+PureLayout.m in Sources */,
+				36A757D41C8C7C5A00C3E411 /* SVProgressHUD.m in Sources */,
+				366D6D2D1C89E85700D4D83B /* main.m in Sources */,
+				366D6E311C89F2C500D4D83B /* AAPLPlayerViewController.m in Sources */,
+				36A757D21C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		366D6D341C89E85700D4D83B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366D6D351C89E85700D4D83B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		366D6D391C89E85700D4D83B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366D6D3A1C89E85700D4D83B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		366D6D531C89E85700D4D83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Objc";
+				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		366D6D541C89E85700D4D83B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Objc";
+				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		366D6D561C89E85700D4D83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = EasyVideoRecorderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../EasyVideoRecorderLib,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.csun.TianZi;
+				PRODUCT_NAME = EasyVideoRecorder1;
+				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+			};
+			name = Debug;
+		};
+		366D6D571C89E85700D4D83B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = EasyVideoRecorderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../EasyVideoRecorderLib,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.csun.TianZi;
+				PRODUCT_NAME = EasyVideoRecorder1;
+				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		366D6D231C89E85700D4D83B /* Build configuration list for PBXProject "EasyVideoRecorderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366D6D531C89E85700D4D83B /* Debug */,
+				366D6D541C89E85700D4D83B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		366D6D551C89E85700D4D83B /* Build configuration list for PBXNativeTarget "EasyVideoRecorderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366D6D561C89E85700D4D83B /* Debug */,
+				366D6D571C89E85700D4D83B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 366D6D201C89E85700D4D83B /* Project object */;
+}
