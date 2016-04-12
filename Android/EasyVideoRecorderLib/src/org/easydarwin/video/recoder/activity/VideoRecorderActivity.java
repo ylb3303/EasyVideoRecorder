@@ -464,11 +464,11 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 
 		RelativeLayout areaBottom = (RelativeLayout) findViewById(R.id.areaBottom);
 		FrameLayout.LayoutParams areaBottomLayout = (LayoutParams) areaBottom.getLayoutParams();
-		
+
 		if (config.getPreviewSize() == RecorderConfig.PREVIEW_SIZE_SMALL) {
 			areaBottomLayout.height = areaHeight - toolHeight - progressHeight - screenWidth;
 		} else {
-			areaBottomLayout.height = areaHeight - previewAreaHeight ;
+			areaBottomLayout.height = areaHeight - previewAreaHeight;
 		}
 		areaBottom.setLayoutParams(areaBottomLayout);
 		videoProgressView.setVisibility(View.VISIBLE);
@@ -574,6 +574,14 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 	}
 
 	public void onBtnFinishRecordClick(View v) {
+		if (recording) {
+			btnStartRecord.setSelected(false);
+			if (config.isShowGuide()) {
+				videoFocusView.showGuideStep(3);
+			}
+			recorderManager.pauseRecord();
+		}
+		recording = false;
 		recordEnd();
 		videoFocusView.finishGuide();
 	}
