@@ -41,7 +41,7 @@ public class RecorderConfig implements Serializable {
 			.setBaseDir(new File(Environment.getExternalStorageDirectory(), "/org.easydarwin.video").getAbsolutePath())
 			.setRecordTimeMax(15 * 1000)
 			.setRecordTimeMin(4 * 1000)
-			.setFrameRate(20)
+			.setFrameRate(25)
 			.setProgressBackgroundColor(Color.parseColor("#222222"))
 			.setProgressRecordingColor(Color.parseColor("#E40077"))
 			.setProgressFlashColor(Color.parseColor("#FFDAEE"))
