@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/video_render_icon_item_selector"
+            android:padding="2dp" >
+
+            <ImageView
+                android:id="@+id/secected_item_image"
+                android:layout_width="@dimen/video_beautify_render_icon_size"
+                android:layout_height="@dimen/video_beautify_render_icon_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/secected_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="原画质"
+            android:textColor="#A5A5A5"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
