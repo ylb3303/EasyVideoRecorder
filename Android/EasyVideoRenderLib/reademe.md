@@ -104,6 +104,7 @@ EasyVideoRecorder 的相关回调设置 支持的回调有cancel 事件回调，
 	Intent in = new Intent();
 	in.putExtra(EasyVideoRender.INPUT_RES_URL, "xxxxxx.zip");//回传资源包地址
 	setResult(RESULT_OK, in);
+	finish();
 
 ## 启动sdk
 	EasyVideoRender.getInstance().start();//启动SDK
