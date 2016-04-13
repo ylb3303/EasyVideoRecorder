@@ -7,6 +7,8 @@ import org.easydarwin.video.common.ProgressDialogFactory;
 import org.easydarwin.video.common.SimpleProgressDialogFactory;
 import org.easydarwin.video.common.SimpleToastFactory;
 import org.easydarwin.video.common.ToastFactory;
+import org.easydarwin.video.common.util.Logger;
+import org.easydarwin.video.common.util.Logger.LoggerOptions;
 import org.easydarwin.video.recoder.VideoRecoder;
 import org.easydarwin.video.recoder.activity.VideoRecorderActivity;
 import org.easydarwin.video.recoder.conf.RecorderConfig;
@@ -44,7 +46,21 @@ public class EasyVideoRecorder {
 
 	public EasyVideoRecorder init(Context context) {
 		this.context = context;
+		initLogger();
 		return this;
+	}
+
+	private void initLogger() {
+		LoggerOptions options = new LoggerOptions.Builder(context)//
+			.defaultTag("EasyVideo")
+			.printLog(true)
+			.level(Logger.VERBOSE)
+			.saveLog(true)
+			.saveLevel(Logger.VERBOSE)
+			.saveCrash(false)
+			.maxLogNum(5)
+			.build();
+		Logger.init(options);
 	}
 
 	public EasyVideoRecorder regist(String key) {

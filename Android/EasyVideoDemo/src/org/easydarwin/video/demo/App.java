@@ -1,12 +1,14 @@
 package org.easydarwin.video.demo;
 
+import org.easydarwin.video.common.util.Logger;
+import org.easydarwin.video.common.util.Logger.LoggerOptions;
 import org.easydarwin.video.recoder.core.EasyVideoRecorder;
 import org.easydarwin.video.render.core.EasyVideoRender;
 
+import android.app.Application;
+
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-
-import android.app.Application;
 
 public class App extends Application {
 
@@ -16,8 +18,9 @@ public class App extends Application {
 
 		EasyVideoRecorder.getInstance().init(this).regist(getRecorderKey());
 		EasyVideoRender.getInstance().init(this).regist(getRenderKey());
-		
+
 		initImageLoader();
+		initLogger();
 	}
 
 	/**
@@ -36,5 +39,13 @@ public class App extends Application {
 	private void initImageLoader() {
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this).build();
 		ImageLoader.getInstance().init(config);
+	}
+
+	private void initLogger() {
+		LoggerOptions options = new LoggerOptions.Builder(this)//
+			.defaultTag("EasyVideoDemo")
+			.saveCrash(true)
+			.build();
+		Logger.init(options);
 	}
 }

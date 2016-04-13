@@ -10,6 +10,8 @@ import org.easydarwin.video.common.ProgressDialogFactory;
 import org.easydarwin.video.common.SimpleProgressDialogFactory;
 import org.easydarwin.video.common.SimpleToastFactory;
 import org.easydarwin.video.common.ToastFactory;
+import org.easydarwin.video.common.util.Logger;
+import org.easydarwin.video.common.util.Logger.LoggerOptions;
 import org.easydarwin.video.render.VideoRender;
 import org.easydarwin.video.render.activity.VideoRenderActivity;
 import org.easydarwin.video.render.conf.RenderConfig;
@@ -58,11 +60,34 @@ public class EasyVideoRender {
 
 	public EasyVideoRender init(Context context) {
 		this.context = context;
+		initLogger();
 		if (AndroidUtils.isProjectProcess(context)) {
 			RenderResHelper.getInstance().initWithContext(context);
 			ParamKeeper.get().setContext(context);
 		}
 		return this;
+	}
+
+	private void initLogger() {
+//		LoggerOptions options = LoggerOptions.createSimple(this);
+		LoggerOptions options = new LoggerOptions.Builder(context)//
+			.defaultTag("EasyVideo")
+			//默认的日志 tag 
+			.printLog(true)
+			//是否需要打印日志   默认开启
+			.level(Logger.VERBOSE)
+			//输出日志的级别 依赖于printLog(true) 默认级别 VERBOSE
+			.saveLog(true)
+			//是否保存日志  默认关闭
+			.saveLevel(Logger.VERBOSE)
+			// 需要保存的日志级别 依赖于saveLog(true) 默认级别 ERROR
+			.saveCrash(false)
+			//是否保存崩溃日志  默认是开启
+			.maxLogNum(5)
+			//保留的日志数量 ，一天一个日志文件，默认只保留3天
+			//.logDir(Environment.getExternalStorageDirectory()+"/EasyVideoLog") //日志输出目录 默认保存在 /sdcard/Android/包名/files/app_log 下面
+			.build();
+		Logger.init(options);
 	}
 
 	public EasyVideoRender regist(String key) {
