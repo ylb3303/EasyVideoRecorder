@@ -7,7 +7,6 @@ import java.util.List;
 import org.easydarwin.video.recoder.R;
 import org.easydarwin.video.recoder.conf.RecorderConfig;
 import org.easydarwin.video.recoder.core.EasyVideoRecorder;
-import org.easydarwin.video.recoder.core.EventPoster;
 import org.easydarwin.video.recoder.core.RecorderManager;
 import org.easydarwin.video.recoder.core.RecorderManager.VideoMergeListener;
 import org.easydarwin.video.recoder.core.RecorderManager.VideoRecordListener;
@@ -172,19 +171,19 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 		recorderManager.setScreenSize(screenSize);
 
 		if (!recorderManager.checkHasStorage()) {
-			EventPoster.getInstance().postEvent(201, "存储卡不可用");
+			EasyVideoRecorder.getInstance().getOnErrorListener().onError(201, "存储卡不可用");
 			finish();
 		}
 		if (recorderManager.getSDFreeSize() < 10) {
-			EventPoster.getInstance().postEvent(202, "存储卡内存不足");
+			EasyVideoRecorder.getInstance().getOnErrorListener().onError(202, "存储卡内存不足");
 			finish();
 		}
 		recorderManager.checkPermission(this);
 		if (recorderManager.getCheckPermissionReslut(RecorderManager.NO_CAMERA_PERMISSION)) {
-			EventPoster.getInstance().postEvent(203, "无系统相机权限");
+			EasyVideoRecorder.getInstance().getOnErrorListener().onError(203, "无系统相机权限");
 			finish();
 		} else if (recorderManager.getCheckPermissionReslut(RecorderManager.NO_AUDIO_PERMISSION)) {
-			EventPoster.getInstance().postEvent(204, "无系统录音权限");
+			EasyVideoRecorder.getInstance().getOnErrorListener().onError(204, "无系统录音权限");
 			finish();
 		}
 	}
@@ -330,9 +329,11 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 					public void run() {
 						dialog.dismiss();
 						if (status >= 0) {
-							EventPoster.getInstance().postEvent(101, VideoRecorderActivity.this, file);
+							EasyVideoRecorder.getInstance().getOnFinishListener().onFinish(VideoRecorderActivity.this, file);
+//							EventPoster.getInstance().postEvent(101,  , file);
 						} else {
-							EventPoster.getInstance().postEvent(101, VideoRecorderActivity.this, null);
+							EasyVideoRecorder.getInstance().getOnFinishListener().onFinish(VideoRecorderActivity.this, null);
+//							EventPoster.getInstance().postEvent(101, VideoRecorderActivity.this, null);
 						}
 					}
 				});
@@ -591,6 +592,7 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 	}
 
 	public void onBtnBackClick(View v) {
-		EventPoster.getInstance().postEvent(100, this);
+//		EventPoster.getInstance().postEvent(100, this);
+		EasyVideoRecorder.getInstance().getOnCancelListener().onCancel(this);
 	}
 }

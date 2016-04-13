@@ -21,15 +21,20 @@
     <application
         android:name="org.easydarwin.video.demo.App"
         android:enabled="true"
-        android:label="EasyRecorder" >
+        android:label="EasyVideo" >
         <activity
-            android:name="org.easydarwin.video.demo.StartActivity"
-            android:screenOrientation="portrait" >
+            android:name="org.easydarwin.video.demo.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="org.easydarwin.video.demo.StartActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="org.easydarwin.video.demo.VideoPlayActivity"

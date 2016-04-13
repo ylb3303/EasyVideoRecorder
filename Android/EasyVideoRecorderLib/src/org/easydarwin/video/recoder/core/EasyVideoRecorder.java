@@ -16,7 +16,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class EasyVideoRecorder implements EventPoster.OnEventListener {
+public class EasyVideoRecorder {
 	private Context context;
 	private OnCancelListener onCancelListener;
 	private OnFinishListener onFinishListener;
@@ -44,7 +44,6 @@ public class EasyVideoRecorder implements EventPoster.OnEventListener {
 
 	public EasyVideoRecorder init(Context context) {
 		this.context = context;
-		EventPoster.getInstance().regist(this);
 		return this;
 	}
 
@@ -160,18 +159,18 @@ public class EasyVideoRecorder implements EventPoster.OnEventListener {
 		}
 	}
 
-	@Override
-	public void onEvent(int code, Object... msg) {
-		if (code >= 200 && code <= 299) {
-			onErrorListener.onError(code, String.valueOf(msg));
-		}
-		if (code == 100) {
-			this.onCancelListener.onCancel((Activity) msg[0]);
-		}
-		if (code == 101) {
-			this.onFinishListener.onFinish((Activity) msg[0], msg[1] == null ? null : (String) msg[1]);
-		}
-	}
+//	@Override
+//	public void onEvent(int code, Object... msg) {
+//		if (code >= 200 && code <= 299) {
+//			onErrorListener.onError(code, String.valueOf(msg));
+//		}
+//		if (code == 100) {
+//			this.onCancelListener.onCancel((Activity) msg[0]);
+//		}
+//		if (code == 101) {
+//			this.onFinishListener.onFinish((Activity) msg[0], msg[1] == null ? null : (String) msg[1]);
+//		}
+//	}
 
 	public OnErrorListener getOnErrorListener() {
 		return onErrorListener;
