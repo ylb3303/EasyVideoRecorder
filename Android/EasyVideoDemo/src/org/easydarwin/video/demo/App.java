@@ -7,6 +7,7 @@ import android.app.Application;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.tencent.bugly.Bugly;
 import com.tencent.bugly.crashreport.CrashReport;
 
 public class App extends Application {
@@ -15,7 +16,8 @@ public class App extends Application {
 	public void onCreate() {
 		super.onCreate();
 		CrashReport.initCrashReport(getApplicationContext(), "900025989", false);
-
+		Bugly.init(getApplicationContext(), "900025989", false);
+		
 		EasyVideoRecorder.getInstance().init(this).regist(getRecorderKey());
 		EasyVideoRender.getInstance().init(this).regist(getRenderKey());
 
