@@ -330,10 +330,8 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 						dialog.dismiss();
 						if (status >= 0) {
 							EasyVideoRecorder.getInstance().getOnFinishListener().onFinish(VideoRecorderActivity.this, file);
-//							EventPoster.getInstance().postEvent(101,  , file);
 						} else {
 							EasyVideoRecorder.getInstance().getOnFinishListener().onFinish(VideoRecorderActivity.this, null);
-//							EventPoster.getInstance().postEvent(101, VideoRecorderActivity.this, null);
 						}
 					}
 				});
@@ -514,6 +512,7 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 				} else {
 					startTime = System.currentTimeMillis();
 					recording = true;
+					btnSwitchCamera.setVisibility(View.INVISIBLE);
 					handler.sendEmptyMessage(MSG_STARTRECORD);
 					if (videoFocusView.isChangeCameraShow()) {
 						videoFocusView.hideChangeCamera();
@@ -524,6 +523,7 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 				if (System.currentTimeMillis() - startTime > 500) {
 					handler.sendEmptyMessage(MSG_PAUSERECORD);
 					recording = false;
+					btnSwitchCamera.setVisibility(View.VISIBLE);
 				}
 				break;
 		}
@@ -555,7 +555,7 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 			case MotionEvent.ACTION_UP:
 				float upY = event.getY();
 				float dis = upY - videoFocusView.getDownY();
-				if (Math.abs(dis) >= 100) {
+				if (Math.abs(dis) >= 100 && !recording) {
 					if (recorderManager.cameraManager().cameraChangeEnable()) {
 						videoFocusView.changeCamreaFlipUp();
 						handler.sendEmptyMessage(MSG_CHANGE_CAMERA);
@@ -592,7 +592,6 @@ public class VideoRecorderActivity extends Activity implements VideoRecordListen
 	}
 
 	public void onBtnBackClick(View v) {
-//		EventPoster.getInstance().postEvent(100, this);
 		EasyVideoRecorder.getInstance().getOnCancelListener().onCancel(this);
 	}
 }

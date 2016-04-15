@@ -46,21 +46,7 @@ public class EasyVideoRecorder {
 
 	public EasyVideoRecorder init(Context context) {
 		this.context = context;
-		initLogger();
 		return this;
-	}
-
-	private void initLogger() {
-		LoggerOptions options = new LoggerOptions.Builder(context)//
-			.defaultTag("EasyVideo")
-			.printLog(true)
-			.level(Logger.VERBOSE)
-			.saveLog(true)
-			.saveLevel(Logger.VERBOSE)
-			.saveCrash(false)
-			.maxLogNum(5)
-			.build();
-		Logger.init(options);
 	}
 
 	public EasyVideoRecorder regist(String key) {

@@ -1,7 +1,5 @@
 package org.easydarwin.video.demo;
 
-import org.easydarwin.video.common.util.Logger;
-import org.easydarwin.video.common.util.Logger.LoggerOptions;
 import org.easydarwin.video.recoder.core.EasyVideoRecorder;
 import org.easydarwin.video.render.core.EasyVideoRender;
 
@@ -17,12 +15,11 @@ public class App extends Application {
 	public void onCreate() {
 		super.onCreate();
 		CrashReport.initCrashReport(getApplicationContext(), "900025989", false);
-		
+
 		EasyVideoRecorder.getInstance().init(this).regist(getRecorderKey());
 		EasyVideoRender.getInstance().init(this).regist(getRenderKey());
 
 		initImageLoader();
-		initLogger();
 	}
 
 	/**
@@ -43,11 +40,4 @@ public class App extends Application {
 		ImageLoader.getInstance().init(config);
 	}
 
-	private void initLogger() {
-		LoggerOptions options = new LoggerOptions.Builder(this)//
-			.defaultTag("EasyVideoDemo")
-			//.saveCrash(true)
-			.build();
-		Logger.init(options);
-	}
 }
