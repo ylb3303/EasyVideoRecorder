@@ -669,7 +669,7 @@ public class VideoRenderActivity extends Activity implements OnClickListener, Re
 	private void startPreview(boolean showLoading) {
 		hidePlayBtn();
 		mGPUImageView.setVisibility(View.VISIBLE);
-		ParamKeeper.get().setPreview(true);
+		ParamKeeper.get().setPreview(true).setOutputFile(renderConfig.getNewVideoOutputName());
 		startNewProcessTask(showLoading, true);
 	}
 
