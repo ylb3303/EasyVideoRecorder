@@ -28,7 +28,9 @@
     <application
         android:name="org.easydarwin.video.demo.App"
         android:enabled="true"
-        android:label="EasyVideo" >
+        android:icon="@drawable/icon_logo"
+        android:label="EasyVideo"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <activity
             android:name="org.easydarwin.video.demo.SplashActivity"
             android:screenOrientation="portrait"

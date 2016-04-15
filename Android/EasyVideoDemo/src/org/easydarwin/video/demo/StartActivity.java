@@ -7,6 +7,8 @@ import org.easydarwin.video.recoder.core.EasyVideoRecorder;
 import org.easydarwin.video.render.conf.RenderConfig;
 import org.easydarwin.video.render.core.EasyVideoRender;
 
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -27,7 +29,7 @@ public class StartActivity extends Activity {
 		setRecorder();//设置 EasyVideoRecorder SDK 参数
 		setRender();
 		startVideoRecord = (Button) findViewById(R.id.startVideoRecord);
-
+		initView();
 		startVideoRecord.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -103,5 +105,16 @@ public class StartActivity extends Activity {
 					}
 				}
 			});
+	}
+
+	private void initView() {
+		ObjectAnimator a1 = ObjectAnimator.ofFloat(startVideoRecord, "scaleX", 0.7f);
+		a1.setDuration(1000).setRepeatCount(ValueAnimator.INFINITE);
+		a1.setRepeatMode(ValueAnimator.REVERSE);
+		a1.start();
+		ObjectAnimator a2 = ObjectAnimator.ofFloat(startVideoRecord, "scaleY", 0.7f);
+		a2.setDuration(1000).setRepeatCount(ValueAnimator.INFINITE);
+		a2.setRepeatMode(ValueAnimator.REVERSE);
+		a2.start();
 	}
 }
