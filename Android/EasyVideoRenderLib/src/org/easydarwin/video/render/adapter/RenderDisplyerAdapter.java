@@ -1,5 +1,7 @@
 package org.easydarwin.video.render.adapter;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.easydarwin.video.render.R;
@@ -23,8 +25,11 @@ public class RenderDisplyerAdapter extends BaseAdapter {
 	protected int selectIndex = -1;
 	protected DisplayImageOptions imageLoaderOption;
 
+	protected RenderDisplyer selectedData;
+
 	public void setSelectIndex(int i) {
 		selectIndex = i;
+		selectedData = null;
 		notifyDataSetChanged();
 	}
 
@@ -47,6 +52,37 @@ public class RenderDisplyerAdapter extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 
+	public int addData(RenderDisplyer data) {
+		int loc = -1;
+		do {
+			for (int i = 0; i < models.size(); i++) {
+				if (data.getId().equals(models.get(i).getId())) {
+					data = models.get(i);
+					loc = i;
+					break;
+				}
+			}
+			this.models.add(data);
+			Collections.sort(this.models, new Comparator<RenderDisplyer>() {
+
+				@Override
+				public int compare(RenderDisplyer lhs, RenderDisplyer rhs) {
+					return lhs.getOrder() - rhs.getOrder();
+				}
+			});
+
+			for (int i = 0; i < models.size(); i++) {
+				if (data == models.get(i)) {
+					loc = i;
+				}
+			}
+		} while (false);
+		selectedData = data;
+		selectIndex = -1;
+		notifyDataSetChanged();
+		return loc * width;
+	}
+
 	@Override
 	public int getCount() {
 		return models != null ? models.size() : 0;
@@ -62,12 +98,18 @@ public class RenderDisplyerAdapter extends BaseAdapter {
 		return position;
 	}
 
+	int width = 1;
+
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder holder = null;
 		if (convertView == null) {
 			holder = new ViewHolder();
 			convertView = View.inflate(mContext, R.layout.video_beautify_render_icon_item, null);
+			int w = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
+			int h = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
+			convertView.measure(w, h);
+			width = convertView.getMeasuredWidth();
 			holder.imageView = (ImageView) convertView.findViewById(R.id.secected_item_image);
 			holder.textView = (TextView) convertView.findViewById(R.id.secected_item_text);
 			convertView.setTag(holder);
@@ -83,7 +125,11 @@ public class RenderDisplyerAdapter extends BaseAdapter {
 			if (selectIndex >= 0) {
 				convertView.setSelected(position == selectIndex);
 			} else {
-				convertView.setSelected(model.getId().equals("0"));
+				if (selectedData == null) {
+					convertView.setSelected(model.getId().equals("0"));
+				} else {
+					convertView.setSelected(model == selectedData);
+				}
 			}
 		}
 		return convertView;

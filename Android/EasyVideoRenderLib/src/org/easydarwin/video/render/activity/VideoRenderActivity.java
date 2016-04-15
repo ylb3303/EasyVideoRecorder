@@ -187,19 +187,29 @@ public class VideoRenderActivity extends Activity implements OnClickListener, Re
 	private void addNewRenderRes(String resUrl, final String type) {
 		RenderResHelper.getInstance().newAddResTask(resUrl, type, new SimpleListener() {
 			@Override
-			public void onResult(Object resut) {
+			public void onResult(Object result) {
+				if (result == null) {
+					return;
+				}
+				RenderDisplyer displayer = (RenderDisplyer) result;
 				if (type.equals(RenderResHelper.RES_FILTER)) {
-					filterDisplyerAdapter.notifyDataSetChanged();
+					int loc = filterDisplyerAdapter.addData(displayer);
+					mFilterListView.scrollTo(loc);
 				}
 				if (type.equals(RenderResHelper.RES_THEME)) {
-					themeDisplyerAdapter.notifyDataSetChanged();
+					int loc = themeDisplyerAdapter.addData(displayer);
+					mThemeListView.scrollTo(loc);
 				}
 				if (type.equals(RenderResHelper.RES_FRAME)) {
-					frameDisplyerAdapter.notifyDataSetChanged();
+					int loc = frameDisplyerAdapter.addData(displayer);
+					mFrameListView.scrollTo(loc);
 				}
 				if (type.equals(RenderResHelper.RES_MUSIC)) {
-					musicDisplyerAdapter.notifyDataSetChanged();
+					int loc = musicDisplyerAdapter.addData(displayer);
+					musiclistview.smoothScrollToPosition(loc);
 				}
+				ParamKeeper.get().from(displayer);
+				startPreview();
 			}
 		});
 	}

@@ -5,6 +5,7 @@ import org.easydarwin.video.render.core.EasyVideoRender;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -23,7 +24,9 @@ public class DownloadFilterActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent in = new Intent();
-				in.putExtra(EasyVideoRender.INPUT_RES_URL, "xxxxxx.zip");//回传资源部本地地址
+
+				String res = Environment.getExternalStorageDirectory() + "/1/101.zip";
+				in.putExtra(EasyVideoRender.INPUT_RES_URL, res);//回传资源部本地地址
 				setResult(RESULT_OK, in);
 				finish();
 			}
