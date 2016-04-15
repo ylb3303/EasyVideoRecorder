@@ -9,13 +9,15 @@ import android.app.Application;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.tencent.bugly.crashreport.CrashReport;
 
 public class App extends Application {
 
 	@Override
 	public void onCreate() {
 		super.onCreate();
-
+		CrashReport.initCrashReport(getApplicationContext(), "900025989", false);
+		
 		EasyVideoRecorder.getInstance().init(this).regist(getRecorderKey());
 		EasyVideoRender.getInstance().init(this).regist(getRenderKey());
 
@@ -44,7 +46,7 @@ public class App extends Application {
 	private void initLogger() {
 		LoggerOptions options = new LoggerOptions.Builder(this)//
 			.defaultTag("EasyVideoDemo")
-			.saveCrash(true)
+			//.saveCrash(true)
 			.build();
 		Logger.init(options);
 	}
