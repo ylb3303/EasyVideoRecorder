@@ -4,6 +4,9 @@
     android:background="@drawable/bg"
     android:orientation="vertical" >
 
+    <TextView android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
     <Button
         android:id="@+id/startVideoRecord"
         android:layout_width="80dp"
@@ -11,6 +14,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/mgp" />
+        android:background="@drawable/start_video" />
 
 </RelativeLayout>
