@@ -17,6 +17,13 @@ typedef enum
     EffectTypeMusic,
 }IEffectType;
 
+typedef enum
+{
+    Blend_Sceen,    // mv透明效果
+    Blend_ColorKey, // mv非透明效果
+    Blend_Normal,
+}IBlendMode;
+
 @interface EffectInfo : NSObject
 
 @property (nonatomic) IEffectType type;
@@ -27,12 +34,24 @@ typedef enum
 @end
 
 @interface FxMovEffect : EffectInfo
+
 @property (nonatomic, copy)NSString *videoPath;
 @property (nonatomic, copy)NSString *audioTrackPath;
+@property (nonatomic)IBlendMode blendMode;
 @end
 
 @interface PicFrameEffect : EffectInfo
-@property (nonatomic, copy)NSString *overlayPath;
+
+//序列图片。因为相框和mv序列帧都是用PicFrameEffect实现，所以要根据基类成员变量type来决定特效类型。
+// 默认为相框特效。指定type为EffectTypeFxMv时表示mv序列帧。
+@property (nonatomic, strong)NSArray *seqFramePaths;
+
+@property (nonatomic)NSTimeInterval animateDuration;
+
+// 0 表示无限循环
+@property (nonatomic)NSInteger loopCount;
+
+@property (nonatomic, copy)NSString *audioTrackPath;
 @end
 
 @interface FilterEffect : EffectInfo
