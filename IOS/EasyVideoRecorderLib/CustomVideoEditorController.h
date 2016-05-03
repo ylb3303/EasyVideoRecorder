@@ -17,6 +17,9 @@
 //刷新数据源,可以刷新音乐，mv特效, 相框
 - (NSInteger)reloadEffects:(NSArray <__kindof EffectInfo *> *)effcts;
 
+// 强制应用某个特效，比如下载某个特效想立即生效，可以在reloadEffects后调用该方法。但是一定
+// 要保证effect数据源已经存在
+- (void)applyEffect:(EffectInfo *)effect;
 @end
 
 @protocol CustomVideoEditorDelegate<NSObject>
