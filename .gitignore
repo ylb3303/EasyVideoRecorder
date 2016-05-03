@@ -4,3 +4,9 @@
 /Android/EasyVideoRecorderLib/gen
 /Android/EasyVideoDemo/bin
 /Android/EasyVideoDemo/gen
+
+IOS/EasyVideoRecorderDemo/EasyVideoRecorderDemo.xcodeproj/xcuserdata/tsinglink.xcuserdatad/xcschemes/EasyVideoRecorderDemo.xcscheme
+
+IOS/EasyVideoRecorderDemo/EasyVideoRecorderDemo.xcodeproj/xcuserdata/tsinglink.xcuserdatad/xcschemes/xcschememanagement.plist
+
+IOS/EasyVideoRecorderDemo/.DS_Store
