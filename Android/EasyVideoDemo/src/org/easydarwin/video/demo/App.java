@@ -30,11 +30,11 @@ public class App extends Application {
 	 * @return key
 	 */
 	private String getRecorderKey() {
-		return "WWpOS2JreUHRWbWhqTTJ4cldWaEtNMkZYTkhWa2JXeHJXbGM0ZFZwSFZuUmlNRUY0VGtSWmVVMUVUWGxOUkVGM1VVUkZNUTA90"; //测试key
+		return "WWplOS2JreHRWbWhqTTJ4cldWaEtNMkZYTkhWa2JXeHJXbGM0ZFZwSFZuUmlNRUY0VGtSak1VMXFWWGhOYWtGM1VVUkZid1Q3S"; //测试key
 	}
 
 	private String getRenderKey() {
-		return "WWpOS2JreLHRWbWhqTTJ4cldWaEtNMkZYTkhWa2JXeHJXbGM0ZFZwSFZuUmlNRUY0VGtSWmVVMUVUWGxOUkVGM1VVUkpUZ0g96"; //测试key
+		return "WW4pOS2JreHRWbWhqTTJ4cldWaEtNMkZYTkhWa2JXeHJXbGM0ZFZwSFZuUmlNRUY0VGtSak1VMXFWWGhOYWtGM1VVUkpOQTU2Y"; //测试key
 	}
 
 	private void initImageLoader() {

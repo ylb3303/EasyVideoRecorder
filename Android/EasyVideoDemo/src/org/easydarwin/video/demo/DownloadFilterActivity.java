@@ -1,5 +1,8 @@
 package org.easydarwin.video.demo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.easydarwin.video.render.core.EasyVideoRender;
 
 import android.app.Activity;
@@ -26,7 +29,11 @@ public class DownloadFilterActivity extends Activity {
 				Intent in = new Intent();
 
 				String res = Environment.getExternalStorageDirectory() + "/1/101.zip";
-				in.putExtra(EasyVideoRender.INPUT_RES_URL, res);//回传资源部本地地址
+				ArrayList<String> resList=new ArrayList<>();
+				resList.add(res);
+				resList.add(res);
+				in.putStringArrayListExtra(EasyVideoRender.INPUT_RES_URL_LIST, resList);//回传资源部本地地址
+//				in.putExtra(EasyVideoRender.INPUT_RES_URL, res);//回传资源部本地地址
 				setResult(RESULT_OK, in);
 				finish();
 			}
