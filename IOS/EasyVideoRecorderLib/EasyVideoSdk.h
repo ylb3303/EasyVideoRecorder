@@ -12,6 +12,7 @@
 
 @interface EasyVideoSdk : NSObject
 
++ (NSString *)sdkVersion;
 + (id)startupWithKey:(NSString *)key error:(NSInteger *)error;
 
 @end

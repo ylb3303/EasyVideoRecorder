@@ -2,10 +2,6 @@
 #import <UIKit/UIKit.h>
 #import "EffectInfo.h"
 
-#define ErrorCodeNotSupport  -2
-#define ErrorCodeInvalidPara  -1
-#define ErrorCodeSuccess     0
-
 typedef void(^EffectVideoOutputCallback)(NSString *exportPath, NSInteger error);
 
 @interface EasyVideoEditorController : UIViewController
@@ -14,6 +10,8 @@ typedef void(^EffectVideoOutputCallback)(NSString *exportPath, NSInteger error);
     NSURL *curApplyMusicUrl;
 }
 
+// 是否显示播放进度 默认NO
+@property BOOL showProgress;
 @property (nonatomic, copy)EffectVideoOutputCallback outputCallback;
 
 @property (nonatomic, copy, readonly)NSURL *curApplyMusicUrl;

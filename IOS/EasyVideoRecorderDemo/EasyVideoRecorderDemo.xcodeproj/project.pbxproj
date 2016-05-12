@@ -25,7 +25,11 @@
 		366D6E321C89F2C500D4D83B /* AAPLPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 366D6E301C89F2C500D4D83B /* AAPLPlayerViewController.xib */; };
 		366D6E351C89F2DF00D4D83B /* AAPLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 366D6E341C89F2DF00D4D83B /* AAPLPlayerView.m */; };
 		366D6E421C8A00EF00D4D83B /* easy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 366D6E401C8A00EF00D4D83B /* easy_logo.png */; };
-		36A0DC0E1CB02D2100DC517A /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A0DC0D1CB02D2100DC517A /* frame.png */; };
+		36739F4D1CB6B59F006B634F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36739F4B1CB6B59F006B634F /* MainViewController.m */; };
+		36739F4E1CB6B59F006B634F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36739F4C1CB6B59F006B634F /* MainViewController.xib */; };
+		367FD14C1CC9C97F005FDF67 /* frame_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 367FD1491CC9C97F005FDF67 /* frame_1.png */; };
+		367FD14D1CC9C97F005FDF67 /* frame_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 367FD14A1CC9C97F005FDF67 /* frame_2.png */; };
+		367FD14E1CC9C97F005FDF67 /* frame_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 367FD14B1CC9C97F005FDF67 /* frame_3.png */; };
 		36A757D21C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A757CB1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m */; };
 		36A757D31C8C7C5A00C3E411 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36A757CD1C8C7C5A00C3E411 /* SVProgressHUD.bundle */; };
 		36A757D41C8C7C5A00C3E411 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A757CF1C8C7C5A00C3E411 /* SVProgressHUD.m */; };
@@ -63,7 +67,12 @@
 		366D6E341C89F2DF00D4D83B /* AAPLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPlayerView.m; sourceTree = "<group>"; };
 		366D6E391C89F7AC00D4D83B /* EasyCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyCaptureViewController.h; sourceTree = "<group>"; };
 		366D6E401C8A00EF00D4D83B /* easy_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = easy_logo.png; path = image/easy_logo.png; sourceTree = "<group>"; };
-		36A0DC0D1CB02D2100DC517A /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = SOURCE_ROOT; };
+		36739F4A1CB6B59F006B634F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		36739F4B1CB6B59F006B634F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		36739F4C1CB6B59F006B634F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		367FD1491CC9C97F005FDF67 /* frame_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_1.png; sourceTree = "<group>"; };
+		367FD14A1CC9C97F005FDF67 /* frame_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_2.png; sourceTree = "<group>"; };
+		367FD14B1CC9C97F005FDF67 /* frame_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_3.png; sourceTree = "<group>"; };
 		36A757CA1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		36A757CB1C8C7C5A00C3E411 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		36A757CC1C8C7C5A00C3E411 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
@@ -72,6 +81,7 @@
 		36A757CF1C8C7C5A00C3E411 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		36A757D01C8C7C5A00C3E411 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		36A757D11C8C7C5A00C3E411 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		36D9D9141CCA42DD0035122E /* EasyVideoErrorCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyVideoErrorCode.h; sourceTree = "<group>"; };
 		E11D4C3D1CA1234F0074170A /* EffectInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectInfo.h; sourceTree = "<group>"; };
 		E11D4C621CA181B70074170A /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
 		E11D4C631CA181B70074170A /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
@@ -109,6 +119,9 @@
 		366D6D1F1C89E85700D4D83B = {
 			isa = PBXGroup;
 			children = (
+				367FD1491CC9C97F005FDF67 /* frame_1.png */,
+				367FD14A1CC9C97F005FDF67 /* frame_2.png */,
+				367FD14B1CC9C97F005FDF67 /* frame_3.png */,
 				366D6D2A1C89E85700D4D83B /* EasyVideoRecorderDemo */,
 				366D6D291C89E85700D4D83B /* Products */,
 			);
@@ -133,7 +146,9 @@
 				366D6E2E1C89F2C500D4D83B /* AAPLPlayerViewController.h */,
 				366D6E2F1C89F2C500D4D83B /* AAPLPlayerViewController.m */,
 				366D6E301C89F2C500D4D83B /* AAPLPlayerViewController.xib */,
-				36A0DC0D1CB02D2100DC517A /* frame.png */,
+				36739F4A1CB6B59F006B634F /* MainViewController.h */,
+				36739F4B1CB6B59F006B634F /* MainViewController.m */,
+				36739F4C1CB6B59F006B634F /* MainViewController.xib */,
 				E11D4C611CA181B70074170A /* PureLayout */,
 				36A757C91C8C7C5A00C3E411 /* SVProgressHUD */,
 				366D6D791C89EB4200D4D83B /* resource */,
@@ -172,6 +187,7 @@
 				E16498171C9FAEF500A30366 /* CustomVideoEditorController.h */,
 				E11D4C3D1CA1234F0074170A /* EffectInfo.h */,
 				E164981B1C9FB13D00A30366 /* EasyVideoEditorController.h */,
+				36D9D9141CCA42DD0035122E /* EasyVideoErrorCode.h */,
 				366010131C8B252C00B6E438 /* libEasyVideoRecorder.a */,
 				E16498101C9F91B100A30366 /* EasyVideoResource.bundle */,
 			);
@@ -241,6 +257,7 @@
 				TargetAttributes = {
 					366D6D271C89E85700D4D83B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SYX825N87A;
 					};
 				};
 			};
@@ -251,6 +268,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 366D6D1F1C89E85700D4D83B;
 			productRefGroup = 366D6D291C89E85700D4D83B /* Products */;
@@ -273,8 +291,11 @@
 				366D6D381C89E85700D4D83B /* Assets.xcassets in Resources */,
 				366D6E321C89F2C500D4D83B /* AAPLPlayerViewController.xib in Resources */,
 				36A757D31C8C7C5A00C3E411 /* SVProgressHUD.bundle in Resources */,
+				36739F4E1CB6B59F006B634F /* MainViewController.xib in Resources */,
 				366D6D361C89E85700D4D83B /* Main.storyboard in Resources */,
-				36A0DC0E1CB02D2100DC517A /* frame.png in Resources */,
+				367FD14C1CC9C97F005FDF67 /* frame_1.png in Resources */,
+				367FD14D1CC9C97F005FDF67 /* frame_2.png in Resources */,
+				367FD14E1CC9C97F005FDF67 /* frame_3.png in Resources */,
 				366D6E421C8A00EF00D4D83B /* easy_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +314,7 @@
 				E11D4C6D1CA181B70074170A /* NSLayoutConstraint+PureLayout.m in Sources */,
 				E11D4C6C1CA181B70074170A /* NSArray+PureLayout.m in Sources */,
 				E11D4C6B1CA181B70074170A /* ALView+PureLayout.m in Sources */,
+				36739F4D1CB6B59F006B634F /* MainViewController.m in Sources */,
 				36A757D41C8C7C5A00C3E411 /* SVProgressHUD.m in Sources */,
 				366D6D2D1C89E85700D4D83B /* main.m in Sources */,
 				366D6E311C89F2C500D4D83B /* AAPLPlayerViewController.m in Sources */,
@@ -339,7 +361,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -362,7 +384,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-Objc";
-				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -384,7 +406,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -410,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EasyVideoRecorderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -420,9 +442,9 @@
 					../EasyVideoRecorderLib,
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.csun.TianZi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ts.TestNao;
 				PRODUCT_NAME = EasyVideoRecorder1;
-				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,7 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Qiong (23773Y3VJR)";
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EasyVideoRecorderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -440,9 +462,9 @@
 					../EasyVideoRecorderLib,
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.csun.TianZi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ts.TestNao;
 				PRODUCT_NAME = EasyVideoRecorder1;
-				PROVISIONING_PROFILE = "e44dfc08-1e22-4839-903d-f8a35fccc053";
+				PROVISIONING_PROFILE = "30e4fecb-d31f-463a-9fbd-1690a84a5745";
 			};
 			name = Release;
 		};
