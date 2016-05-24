@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <dimen name="video_beautify_menu_size">65dp</dimen>
-    <dimen name="video_beautify_render_icon_size">65dp</dimen>
-
-</resources>

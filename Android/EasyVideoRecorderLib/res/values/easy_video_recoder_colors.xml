@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <color name="video_record_guide_notice">#96000000</color>
-    <color name="video_record_background">#000000</color>
-    <color name="video_record_toolbar_color">#222222</color>
-
-</resources>
