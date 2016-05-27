@@ -1,5 +1,21 @@
 # EasyVideoRender SDK 文档
 
+
+## 依赖准备
+鉴于Android Studio的普及趋势，EasyVideoRender 将只支持 Android Studio，提供aar形式依赖，具体参照 EasyVideoDemo。
+
+* 将 EasyVideoCommonLib-release.aar 拷贝到 项目/libs 下
+* 将 EasyVideoRenderLib-release.aar 拷贝到 项目/libs 下
+* 在项目/build.gradle 添加 aar 依赖。 （注意：EasyVideoRenderLib 中使用了 universal-image-loader，请也添加此依赖）
+
+> e.g:
+
+  	dependencies {
+	    compile(name: 'EasyVideoRenderLib-release', ext: 'aar')
+	    compile(name: 'EasyVideoCommonLib-release', ext: 'aar')
+		compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+	}
+
 ## 初始化
 * 在 Application 中初始化 EasyVideoRender 并传入key进行注册   
 * EasyVideoRender中使用了universalimageloader，所以务必也要初始化 universalimageloader，如果你的项目也使用了universalimageloader，请注意版本一致防止冲突。
@@ -101,9 +117,20 @@ EasyVideoRecorder 的相关回调设置 支持的回调有cancel 事件回调，
 
 ### 3: 回传资源包 
 
+#####（1）回传单个资源包
 	Intent in = new Intent();
 	in.putExtra(EasyVideoRender.INPUT_RES_URL, "xxxxxx.zip");//回传资源包地址
 	setResult(RESULT_OK, in);
+	finish();
+
+
+#####（2）回传资源包列表
+	String res = Environment.getExternalStorageDirectory() + "/1/101.zip";
+	ArrayList<String> resList=new ArrayList<>();
+	resList.add(res);
+	resList.add(res);
+	in.putStringArrayListExtra(EasyVideoRender.INPUT_RES_URL_LIST, resList);//回传资源部本地地址列表
+ 	setResult(RESULT_OK, in);
 	finish();
 
 ## 启动sdk
