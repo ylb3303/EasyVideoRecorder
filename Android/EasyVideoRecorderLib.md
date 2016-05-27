@@ -1,19 +1,5 @@
 # EasyVideoRecorder SDK 文档 
 
-## 依赖准备
-鉴于Android Studio的普及趋势，EasyVideoRecorder 将只支持 Android Studio，提供aar形式依赖，具体参照 EasyVideoDemo。
-
-* 将 EasyVideoCommonLib-release.aar 拷贝到 项目/libs 下
-* 将 EasyVideoRecorderLib-release.aar 拷贝到 项目/libs 下
-* 在项目/build.gradle 添加 aar 依赖 
-
-> e.g:
-
-  	dependencies {
-	    compile(name: 'EasyVideoRecorderLib-release', ext: 'aar')
-	    compile(name: 'EasyVideoCommonLib-release', ext: 'aar')
-	}
-
 ## 初始化 
 * EasyVideoRecorder 通过单例获取实例 EasyVideoRecorder.getInstance();
 * init(Context context)  
@@ -53,7 +39,7 @@ EasyVideoRecorder 的通用参数通过 RecorderConfig 进行设置 支持设置
 	.setRecordTimeMax(15 * 1000)//设置拍摄的最大长度，单位毫秒
 	.setRecordTimeMin(2 * 1000)
 	.setPreviewSize(RecorderConfig.PREVIEW_SIZE_SMALL)//设置预览页面大小
-	.setProgressPostion(RecorderConfig.PROGRESS_POSITION_BOTTOM)；// 设置进度条位置
+	.setProgressPostion(RecorderConfig.PROGRESS_POSTION_BOTTOM)；// 设置进度条位置
 
 	EasyVideoRecorder.getInstance().setRecorderConfig(config);
 
