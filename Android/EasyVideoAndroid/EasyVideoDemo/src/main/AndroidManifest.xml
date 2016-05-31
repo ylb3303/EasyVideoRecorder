@@ -65,23 +65,6 @@
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:theme="@android:style/Theme.Translucent" />
 
-        <!-- EasyVideoRecorderLib start -->
-        <activity
-            android:name="org.easydarwin.video.recoder.activity.VideoRecorderActivity"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
-        <!-- EasyVideoRecorderLib end -->
-
-
-        <!-- EasyVideoRenderLib start -->
-        <activity
-            android:name="org.easydarwin.video.render.activity.VideoRenderActivity"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
-        <!-- EasyVideoRenderLib end -->
-
     </application>
 
 </manifest>
