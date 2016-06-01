@@ -1,11 +1,11 @@
 # EasyVideoRecorder SDK 文档 
 
 ## 依赖准备
-鉴于Android Studio的普及趋势，EasyVideoRecorder 将只支持 Android Studio，提供aar形式依赖，具体参照 EasyVideoDemo。
+鉴于Android Studio的普及趋势，EasyVideoRecorder 将只支持 Android Studio，提供`aar`形式依赖，具体参照 EasyVideoDemo。
 
-* 将 EasyVideoCommonLib-release.aar 拷贝到 项目/libs 下
-* 将 EasyVideoRecorderLib-release.aar 拷贝到 项目/libs 下
-* 在项目/build.gradle 添加 aar 依赖 
+* 将 `EasyVideoCommonLib-release.aar` 拷贝到 项目`/libs` 下
+* 将 `EasyVideoRecorderLib-release.aar` 拷贝到 项目`/libs` 下
+* 在项目`/build.gradle` 添加 `aar` 依赖 
 
 > e.g:
 
@@ -15,15 +15,15 @@
 	}
 
 ## 初始化 
-* EasyVideoRecorder 通过单例获取实例 EasyVideoRecorder.getInstance();
-* init(Context context)  
-传入context 初始化 ，EasyVideoRecorder 维持单例，因此对传入的对象需谨慎，防止内存泄露，建议传入 ApplicationContext
+* EasyVideoRecorder 通过单例获取实例` EasyVideoRecorder.getInstance()`;
+* `init(Context context)`  
+传入context 初始化 ，EasyVideoRecorder 维持单例，因此对传入的对象需谨慎，防止内存泄露，建议传入 `ApplicationContext`
 
-* regist(String key)   
+* `regist(String key)`   
 传入 EasyVideoRecorder 授权的key进行注册，key和包名绑定，并且必须保持正确，错误的key将导致crash，开发者应该妥善保管key，以防别人盗用
 
-> e.g:
-   
+> e.g:  
+
 	public class App extends Application {
 
 		@Override

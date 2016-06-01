@@ -1,5 +1,5 @@
-//include ':EasyVideoCommonLib'
-//include ':EasyVideoRecorderLib'
-//include ':EasyVideoRenderLib'
+include ':EasyVideoCommonLib'
+include ':EasyVideoRecorderLib'
+include ':EasyVideoRenderLib'
 include ':EasyVideoDemo'
 

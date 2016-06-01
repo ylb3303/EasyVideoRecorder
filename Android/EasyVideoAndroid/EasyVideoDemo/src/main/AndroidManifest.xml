@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.easydarwin.video.demo"
-    android:versionCode="3"
-    android:versionName="2.1">
+    package="org.easydarwin.video.demo">
 
-
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.autofocus" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- bugly -->
-
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
-    <!-- update -->
+    <!--Tencent bugly  permission-->
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -36,6 +17,8 @@
         android:icon="@drawable/logo2"
         android:label="EasyVideo"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+
+        <!--demo app activity-->
         <activity
             android:name="org.easydarwin.video.demo.SplashActivity"
             android:screenOrientation="portrait"
@@ -61,6 +44,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
+        <!--tencent bugly activity-->
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:theme="@android:style/Theme.Translucent" />
