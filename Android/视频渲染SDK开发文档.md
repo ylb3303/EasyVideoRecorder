@@ -4,9 +4,9 @@
 ## 依赖准备
 鉴于Android Studio的普及趋势，EasyVideoRender 将只支持 Android Studio，提供aar形式依赖，具体参照 EasyVideoDemo。
 
-* 将 EasyVideoCommonLib-release.aar 拷贝到 项目/libs 下
-* 将 EasyVideoRenderLib-release.aar 拷贝到 项目/libs 下
-* 在项目/build.gradle 添加 aar 依赖。 （注意：EasyVideoRenderLib 中使用了 universal-image-loader，请也添加此依赖）
+* 将 `EasyVideoCommonLib-release.aar` 拷贝到 项目`/libs` 下
+* 将 `EasyVideoRenderLib-release.aar` 拷贝到 项目`/libs` 下
+* 在项目`/build.gradle` 添加 aar 依赖。 （注意：`EasyVideoRenderLib` 中使用了 `universal-image-loader`以及`android-support-v4`，请也添加这两个依赖）
 
 > e.g:
 
@@ -14,11 +14,12 @@
 	    compile(name: 'EasyVideoRenderLib-release', ext: 'aar')
 	    compile(name: 'EasyVideoCommonLib-release', ext: 'aar')
 		compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+		compile "com.android.support:support-v4:22.2.1"
 	}
 
 ## 初始化
-* 在 Application 中初始化 EasyVideoRender 并传入key进行注册   
-* EasyVideoRender中使用了universalimageloader，所以务必也要初始化 universalimageloader，如果你的项目也使用了universalimageloader，请注意版本一致防止冲突。
+* 在 `Application` 中初始化 `EasyVideoRender` 并传入`key`进行注册   
+* `EasyVideoRender中使用了` `universalimageloader`，所以务必也要初始化 `universalimageloader`，`如果你的项目也使用了universalimageloader`，请注意版本一致防止冲突。
 
 > e.g:
 
@@ -49,7 +50,7 @@
 
 ## 准备视频渲染材料
 
-将视频渲染资源拷贝至app 的 assets 目录中
+将视频渲染资源拷贝至app 的 `assets` 目录中
   
 * common 通用资源目录，包括水印等 
 * filter 滤镜资源目录     
