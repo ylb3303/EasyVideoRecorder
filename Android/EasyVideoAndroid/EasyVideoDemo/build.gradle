@@ -15,7 +15,7 @@ android {
         applicationId "org.easydarwin.video.demo"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 5
+        versionCode 6
         versionName "3.1"
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_7
@@ -38,14 +38,19 @@ android {
 }
 
 dependencies {
+    if (Boolean.valueOf("${dev}")) {
+        compile project(':EasyVideoRecorderLib')
+        compile project(':EasyVideoRenderLib')
+    } else {
+        compile(name: 'EasyVideoRecorderLib-release', ext: 'aar')
+        compile(name: 'EasyVideoRenderLib-release', ext: 'aar')
+        compile(name: 'EasyVideoCommonLib-release', ext: 'aar')
+    }
 
-    compile project(':EasyVideoRecorderLib')
-    compile project(':EasyVideoRenderLib')
-
-//    compile(name: 'EasyVideoRecorderLib-release', ext: 'aar')
-//    compile(name: 'EasyVideoRenderLib-release', ext: 'aar')
-//    compile(name: 'EasyVideoCommonLib-release', ext: 'aar')
-
-    compile files('libs/bugly_crash_upgrade_1.0.0.jar')
+    //  sdk require for EasyVideoRenderLib
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile "com.android.support:support-v4:22.2.1"
+
+    // for demo crash report , not sdk require
+    compile files('libs/bugly_crash_upgrade_1.0.0.jar')
 }
